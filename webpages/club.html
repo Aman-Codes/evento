@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />   
+    <title>Evento</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/eventologo.png">
+
+    <!-- Stylesheets -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+
+<style>   
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Evento</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="club.html">Clubs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="department.html">Department Wise Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="clubevent.html">Club  Wise Events</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Category Wise Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="technical.html">Technical Events</a>
+                  <a class="dropdown-item" href="sports.html">Sports Events</a>
+                  <a class="dropdown-item" href="cultural.html">Cultural Events</a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fest.html">Fest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interhouseevents.html">Inter House Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interiit.html">Inter IIT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="yourschedule.html">Personalised Schedule</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="personalisednews.html">Personalised News</a>
+            </li>             
+          </ul>
+        </div>
+      </nav>
+    <br>
+
+    <!-- Header Images -->
+    <div class="row mt-5">
+        <div class="col-sm-2">
+            <img src="../assets/images/eventologo.png" style="width:100%">
+        </div>
+        <div class="col-sm-2">
+            <img src="../assets/images/ismlogo.png" style="width:100%">
+        </div>
+        <div class="col-sm-8">
+            <img src="../assets/images/ismname.png" style="width:100%; height:100%">
+        </div>
+    </div>
+    
+    <!-- Marquee -->
+    <marquee ><h1>Concetto has started!!!</h1></marquee>
+
+    <!-- Concetto Logo -->
+    <img src="../assets/images/concettologo.png" style="height: 40vh; width: 100vw;">
+
+    <!-- List of Clubs -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <u><b><h1>List Of The Clubs And Functional Socities In Our College</h1> </b></u>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>CYBERLABS</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/cyberlabs.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    CyberLabs is an initiative by students of IIT(ISM) on the footsteps of MIT MediaLabs to learn vital concepts of engineering by working on real time projects and it aims to foster innovation through practical implementations of basic concepts. It helps one discover opportunities in numerous fields of computing and instil life-hacks of the computer world by collective collaboration of the members ,seniors and facilitators.Recently 6 of the club members have been selected for GSOC 19. 
+                    <br>
+                    Year Of Formation : 2014<br>
+                    <a href = "https://www.facebook.com/labscyber"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>ROBO-ISM</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    The Robotics club is a student run organization/club which officially comes under Cyber Security of IIT(ISM). The president of this club is DR.Sachin Tripathi(Associate Prof. Department of Computer Science and Engineering).The robotics Club is a cmmunity of students who find pleasure in creating mechanical peers that may even be potent to work without human intervention. 
+                    <br>
+                    <a href = "https://www.facebook.com/roboism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/roboism.png" width="100%">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>FotoFreaks</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/photofreaks.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    The Photography Club Of IIT (ISM) Dhanbad is a group of young enthusiastic photographers where capturing pictures isn't just a hobby .It's a medium to express who you are and how you see the world . People at PhotoFreaks bring out that little hidden photographer in you and help it shine .They are the ones who capture the most astonishing moments of the campus life .A number of photowalks, an annual national level exhibition (PhotoMela) and various other activities in collaboration with other clubs, are organised.<br>
+                    Year Of Formation : 2014<br>
+                    SAC Room Number : 205 , 206<br>
+                    <a href = "https://www.facebook.com/fotofreaks.iitism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>LITM</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    Legends In The Making is the official stage dance club of IIT (ISM) .The members learn different dance styles like breaking, locking, poping, whacking, etc. from senior members, as well as guest dancers invited to various workshops. 
+                    <br>
+                    Year Of Formation : 2011 <br>
+                    <a href = "https://www.facebook.com/LITM.ISM"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/litm.jpg" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>ADC</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/adc.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    If  there is an actor inside you, the stage of Abhay Dramatics Club provides an excellent platform to follow your passion. One of the most reputed clubs of our college. ADC gives opportunities to perform in front of audiences  heavy in both intellectual and number. It's a place where you can take all your  skills under the guidance of some excellent artists.
+                    <br>
+                    Year Of Formation : 2009<br>
+                    <a href = "https://www.facebook.com/abhaydramaticsclub"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>LCI</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    Have you ever dreamt of making your own film? If yes, then Lights Camera Action ISM is the official filmography club of IIT (ISM) Dhanbad, where you can explore your creativity and skills. The club also gives the opportunity to explore your passion in acting as well music, videos, to stories, social experiment to college function - LCI does it all. So be a part of LCI and learn the art of film making from the best! 
+                    <br>
+                    Year Of Formation : 2016<br>
+                    <a href = "https://www.facebook.com/14ryproductions"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a> &nbsp;&nbsp;
+                    <a href = "https://www.youtube.com/lightcameraism/"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i>  </a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/lci.png" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>Manthan</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/manthan.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    Manthan is the official music club of IIT (ISM) Dhanbad, aiming to provide a platform and launching pad to the musical talent of our college. It thrives to develop a sense of music among all the members. Alive, Acoustic Session, The Last Stage and many more events, in collaboration with other clubs, are organised annually by the club.
+                    <br>
+                    Year Of Formation : 2012<br>
+                    <a href = "https://www.facebook.com/manthaniitism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>WTC</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    "WE THE CREW" the official street dance crew of IIT (ISM) Dhanbad was established on 2nd December 2014. The crew looks to rock the streets and stages with different styles, like hiphop, funk and break dance. Last year they had bagged the 6th position in Spring Fest and came 3rd in Spring Fest 2019 .
+                    <br>
+                    Year Of Formation : 2012<br>
+                    <a href = "https://www.facebook.com/manthaniitism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a> 
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/wtc.jpg" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>LITC</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/litc.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    If you have a things for book and literature.LITC welcomes you with great heart.The literary and debate club of your college.LITC providesa common platform for leaders,writers,speakers ,poets,bloggers,journalist and debators to nurture their skills and present them to the mass.Their activities include discussions,debates,elocution,story writing,and promotion of literature in diverse forms.
+                    <br>
+                    Year Of Formation : 2010<br>
+                    <a href = "https://www.facebook.com/litcism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>ARTFREAKS</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    Want to bring out that little hidden artist in you?If yes,then this is the perfect place for you.Artfreaks is a creative club of IIT(ISM)where the senior members guide you to pursue and flourish different forms of art and craft through various workshops.The contribution of club in the fests organized annually in college is huge as the members work selflessly to give the campus a completely new look.
+                    <br>
+                    Year Of Formation : 2015<br>
+                    <a href = "https://www.facebook.com/artfreaks.ism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a> 
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/art.jpg" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>KARTAVYA</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/kartavya.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    Kartavya is a non-profit voluntary organisation run by the students of IIT(ISM).It is mainly working for the education of poor and underprivileged children in slums and villages,and helps their families for better living through various projects.Kartavya has a total of 11 chapters across india.kartavya is providing education to 1500 children across the country along with the employment of 100+ through recruitment.   
+                    <br>
+                    Year Of Formation : 1999<br>
+                    <a href = "https://www.facebook.com/kartavya.org"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>ARKA</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    The astronomy club of IIT(ISM) is a paradise for all who have ever looked at the night sky with several lingering questions.Awe at its magnificence and stuck with its mysteries,ARKA aims to inculcate the passion for astronomy in the students. 
+                    <br>
+                    Year Of Formation : 2017<br>
+                    <a href = "https://www.facebook.com/ARKAiitism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a> 
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/arka.jpg" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>MECHISMU</h3></u><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src = "../assets/images/mechismu.jpg" width="100%">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    Ever wondered how simple stuffs like suspension,radiators,engines and brakes build up racing cars that manage to set tracks on fire?So don't be just amenable to different revolutions in the history of car mechanics,but be a part of this amazing journey to designand create your own automobile with MECHISMU,the official Formula Racing Team of IIT(ISM)Dhanbad because we believe racing is religion.  
+                    <br>
+                    Year Of Formation : 2008<br>
+                    <a href = "https://www.facebook.com/mechismu"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br><u><h3>QUIZIAPA</h3></u><br>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-9">
+                <p>
+                    The quizzing club  of iit ism dhanbad. If anyone is interested in any form of quizzing they can join the club.Quiziapa,the quiz club of iit ism dhanbad bought laurels to the institution.Team of our college were runners of the competition which comprises of nearly 180 teams. 
+                    <br>
+                    <a href = "https://www.facebook.com/groups/quiziapaclub.ism"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a> 
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src = "../assets/images/quiz.jpg" width="100%">
+            </div>
+        </div>  
+    </div>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- Footer -->
+    <footer class="p-3 mb-2 bg-secondary text-white mt-5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 offset-1">
+                    <p>Contact Number:  9875XXXXXX</p>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <p>Email:  support@evento.com</p>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <p>Social Media:  www.facebook.com/evento</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">© 2020 Copyright
+        </div>            
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />   
+    <title>Evento</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/eventologo.png">
+
+    <!-- Stylesheets -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- JavaScript -->
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    
+
+<style>   
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Evento</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="club.html">Clubs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="department.html">Department Wise Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="clubevent.html">Club  Wise Events</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Category Wise Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="technical.html">Technical Events</a>
+                  <a class="dropdown-item" href="sports.html">Sports Events</a>
+                  <a class="dropdown-item" href="cultural.html">Cultural Events</a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fest.html">Fest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interhouseevents.html">Inter House Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interiit.html">Inter IIT</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="yourschedule.html">Personalised Schedule</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="personalisednews.html">Personalised News</a>
+            </li>             
+          </ul>
+        </div>
+      </nav>
+    <br>
+
+    <!-- Header Images -->
+    <div class="row mt-5">
+        <div class="col-sm-2">
+            <img src="../assets/images/eventologo.png" style="width:100%">
+        </div>
+        <div class="col-sm-2">
+            <img src="../assets/images/ismlogo.png" style="width:100%">
+        </div>
+        <div class="col-sm-8">
+            <img src="../assets/images/ismname.png" style="width:100%; height:100%">
+        </div>
+    </div>
+    
+    <!-- Marquee -->
+    <marquee ><h1>Concetto has started!!!</h1></marquee>
+
+    <!-- Concetto Logo -->
+    <img src="../assets/images/concettologo.png" style="height: 40vh; width: 100vw;">
+
+    <!-- List of Clubs -->
+    <header class="cd-main-header text-center flex flex-column flex-center">
+        <p class="margin-top-md margin-bottom-xl"></p>    
+        <h1 class="text-xl"><u>Your Personalised Schedule</u> </h1>
+    </header>
+    
+    <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+        <div class="cd-schedule__timeline">
+            <ul>
+                <li><span>07:00</span></li>
+                <li><span>07:30</span></li>
+                <li><span>8:00</span></li>
+                <li><span>8:30</span></li>
+                <li><span>09:00</span></li>
+                <li><span>09:30</span></li>
+                <li><span>10:00</span></li>
+                <li><span>10:30</span></li>
+                <li><span>11:00</span></li>
+                <li><span>11:30</span></li>
+                <li><span>12:00</span></li>
+                <li><span>12:30</span></li>
+                <li><span>13:00</span></li>
+                <li><span>13:30</span></li>
+                <li><span>14:00</span></li>
+                <li><span>14:30</span></li>
+                <li><span>15:00</span></li>
+                <li><span>15:30</span></li>
+                <li><span>16:00</span></li>
+                <li><span>16:30</span></li>
+                <li><span>17:00</span></li>
+                <li><span>17:30</span></li>
+                <li><span>18:00</span></li>
+                <li><span>18:30</span></li>
+                <li><span>19:00</span></li>
+                <li><span>19:30</span></li>
+                <li><span>20:00</span></li>
+                <li><span>20:30</span></li>
+            </ul>
+        </div> 
+        
+      
+        <div class="cd-schedule__events">
+            <ul>
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                        <span>Monday</span>
+                    </div>
+      
+                    <ul>
+                        <li class="cd-schedule__event">
+                        <a data-start="08:00" data-end="9:50" data-content="event-Physics Lab" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Physics Lab [JM,KK]</em>
+                        </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                        <a data-start="14:30" data-end="15:30" data-content="Engineering Mechanics Tutorial" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Engineering Mechanics Tutorial Class [SB]</em>
+                        </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                        <a data-start="15:30" data-end="16:30" data-content="Economics" data-event="event-3" href="#0">
+                            <em class="cd-schedule__name">Economics Class [SS]</em>
+                        </a>
+                        </li>
+                    
+                    
+                        <li class="cd-schedule__event">
+                            <a data-start="16:30" data-end="17:30"  data-content="Mathematics" data-event="event-4" href="#0">
+                                <em class="cd-schedule__name">Mathematics Class [PKK]</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+      
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                      <span>Tuesday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="8:00" data-end="12:00"  data-content="Engineering Graphics Lab" data-event="event-3" href="#0">
+                            <em class="cd-schedule__name">Engineering Graphics Lab MD Lab [RV]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="14:30" data-end="15:30"  data-content="event-Physics" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Physics Class [RT]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="15:30" data-end="16:30" data-content="Engineering Mechanics Class" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Engineering Mechanics Class [RNH]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="16:30" data-end="17:30"  data-content="Electrical Class" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Electrical Class [NP]</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                      <span>Wednesday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="09:00" data-end="11:50" data-content="Electrical Lab" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Electrical Lab [GS]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="14:30" data-end="15:30" data-content="event-yoga-1" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Engineering Mechanics [RNH]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="15:30" data-end="16:30"  data-content="Mathematics Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Mathematics Class [PKK]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="16:30" data-end="17:30" data-content="Electrical Class" data-event="event-3" href="#0">
+                            <em class="cd-schedule__name">Electrical Class [NP]</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                      <span>Thursday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="09:30" data-end="10:30" data-content="Finance Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Finance Class [MP]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="12:00" data-end="13:45" data-content="Mathematics Class" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Mathematics Class [PKK]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="15:30" data-end="16:30" data-content="Modern Physics Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Modern Physics Class [PKS]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Code Ism Class</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                        <span>Friday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="13:30" data-end="14:30"  data-content="Engineering Mechanics Class" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Engineering Mechanics Class [RNH]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="14:30" data-end="15:30" data-content="Electrical Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Electrical Class [NP] </em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="15:30" data-end="16:30" data-content="Mathematics Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Mathematics Class[PKK]</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="16:30" data-end="17:30"  data-content="Electrodynamics Class" data-event="event-3" href="#0">
+                            <em class="cd-schedule__name">Electrodynamics Class [SS]</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                        <span>Saturday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="09:30" data-end="10:30" data-content="Code Ism Class" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">Code Ism Class</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="12:00" data-end="13:45" data-content="Robotics Workshop" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Robotics Workshop</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="15:00" data-end="17:00" data-content="Department Meeting" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Department Meeting</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="16:00" data-end="19:00"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Cricket Tournament</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info">
+                        <span>Sunday</span>
+                    </div>
+                
+                    <ul>
+                        <li class="cd-schedule__event">
+                          <a data-start="09:30" data-end="10:30" data-content="Cyber Lab Workshop" data-event="event-4" href="#0">
+                            <em class="cd-schedule__name">Cyber Lab Workshop</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="10:30" data-end="12:00" data-content="Robotics Workshop" data-event="event-2" href="#0">
+                            <em class="cd-schedule__name">Robotics Workshop</em>
+                          </a>
+                        </li>
+                    
+                        <li class="cd-schedule__event">
+                          <a data-start="17:30" data-end="19:00" data-content="house Meeting" data-event="event-1" href="#0">
+                            <em class="cd-schedule__name">House Meeting</em>
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      
+        <div class="cd-schedule-modal">
+            <header class="cd-schedule-modal__header">
+                <div class="cd-schedule-modal__content">
+                <span class="cd-schedule-modal__date"></span>
+                <h3 class="cd-schedule-modal__name"></h3>
+                </div>        
+                <div class="cd-schedule-modal__header-bg"></div>
+            </header>
+      
+            <div class="cd-schedule-modal__body">
+              <div class="cd-schedule-modal__event-info"></div>
+              <div class="cd-schedule-modal__body-bg"></div>
+            </div>
+      
+            <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+        </div>
+      
+        <div class="cd-schedule__cover-layer"></div>
+    </div> <!-- .cd-schedule -->
+    <script src="../assets/js/util.js"></script> 
+    <script src="../assets/js/main.js"></script>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- Footer -->
+    <footer class="p-3 mb-2 bg-secondary text-white mt-5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 offset-1">
+                    <p>Contact Number:  9875XXXXXX</p>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <p>Email:  support@evento.com</p>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <p>Social Media:  www.facebook.com/evento</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">© 2020 Copyright
+        </div>            
+    </footer>
+
+</body>
+</html>
